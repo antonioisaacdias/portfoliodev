@@ -1,0 +1,85 @@
+.projects{
+
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 6rem;
+    h2 {
+        color: var(--color-text-primary) !important;
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--color-text);
+        margin-block: 4rem;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        i {
+            color: var(--color-text-primary);
+            font-size: 2.5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    .cards-painel{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        .card{
+            background-color: var();
+            display: flex;
+            flex-wrap: nowrap;
+            border-radius: 8px;
+            padding: 1.5rem;
+            gap: 2rem;
+            background-color: var(--color-background-highlight);
+
+            img{
+                object-fit: cover;
+                border-radius: 8px;
+                border: 2px solid var(--color-text-primary);
+                width: 500px;
+            }
+
+
+            .card-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-block: 2rem;
+                gap: 1rem;
+                h3{
+                    color: var(--color-text-primary);
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+
+                p{
+                    color: var(--color-text-secondary);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 2rem;
+                }
+                a{
+                    color: var(--color-text-secondary);
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    align-self: center;
+                    display: inline-block;
+                    width: fit-content;
+                    padding: 0.5rem 1rem;
+                    border-radius: 8px;
+
+                    border: 2px solid var(--color-text-secondary);
+
+                    &:hover{
+                        color: var(--color-hover);
+                        border-color: var(--color-hover);
+                        transform: scale(1.05);
+                        filter: drop-shadow(0 0 10px rgba(0, 255, 100, 0.8));
+                    }
+                }
+            }
+        }
+    }
+}
