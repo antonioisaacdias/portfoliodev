@@ -1,0 +1,49 @@
+:root {
+    /* Cores Principais */
+    --color-background-primary: #121715;   /* Cinza muito escuro com leve tom esverdeado */
+    --color-background-secondary: #1A1F1D; /* Um pouco mais claro que o primário */
+    --color-background-highlight: #2A2F2C; 
+
+    /* Cores de Acento */
+    --color-accent-primary: #27AE60;
+    --color-accent-secondary: #219150;
+    --color-accent-alert: #E74C3C;
+
+    /* Cores Neutras */
+    --color-text-primary: #E0F2E9;
+    --color-text-secondary: #A7CDBB;
+    --color-border: #2C3E36;
+
+    /* Cores de Estados */
+    --color-success: #27AE60;
+    --color-warning: #F1C40F;
+    --color-error: #E74C3C;
+
+    /* Cores de Hover e Ativo */
+    --color-hover: #1D9E58;
+    --color-active: #168147;
+    --color-link-hover: #34D186;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, button, input, textarea {
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    color: var(--color-text-primary);
+}
+
+body {
+    background-color: var(--color-background-primary);
+
+}
