@@ -32,6 +32,13 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: all 0.2s ease-in-out;
+}
+
+
 *, button, input, textarea {
     outline: none;
     border: none;
@@ -46,4 +53,10 @@
 body {
     background-color: var(--color-background-primary);
 
+}
+
+section, header, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
