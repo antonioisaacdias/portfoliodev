@@ -20,7 +20,8 @@
                 <i class="fa-solid fa-computer"></i>
                 <strong>DEVELOPER PORTFOLIO</strong>
             </div>
-            <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
                 <li><a href="#intro">Início</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Projetos</a></li>
@@ -184,6 +185,12 @@
             <p>create with ♥ by Antonio Dias</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
     <script src="js/app.js" type=""></script>
 </body>
 </html>

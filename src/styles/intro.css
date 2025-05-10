@@ -65,3 +65,31 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .intro{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+
+        .intro-text{
+            align-items: center;
+            justify-items: center;
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                text-align: center;
+                text-justify: center;
+                font-size: 1.1rem;
+            }
+            
+        }
+
+        .intro-img{
+            img{
+                max-width: 300px;
+            }
+        }
+    }
+    
+}

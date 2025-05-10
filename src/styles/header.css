@@ -26,6 +26,16 @@ header {
 
         }
 
+
+        .menu-toggle {
+            display: none;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--color-text, #fff); /* Ajuste conforme sua paleta */
+        }
+
         ul{
             display: flex;
             align-items: center;
@@ -40,5 +50,40 @@ header {
             }
 
         }
+    }
+}
+
+@media (max-width: 768px) {
+    header nav .menu-toggle {
+        display: block;
+    }
+
+    header nav ul {
+        display: flex; /* Manter o flex para aplicar transform e opacity */
+        flex-direction: column;
+        position: absolute;
+        top: 108px; /* Posição inicial abaixo do nav */
+        left: 50%;
+        transform: translateX(-50%) translateY(-20px); /* Inicia um pouco acima */
+        background: #333;
+        padding: 2rem;
+        border-radius: 12px;
+        z-index: 999;
+        width: 80%;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    header nav ul.show {
+        transform: translateX(-50%) translateY(0); /* Move para a posição original */
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
     }
 }

@@ -61,3 +61,34 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .skills{
+        h2 {
+            font-size: 2rem;
+            margin-block: 3rem;
+        }
+        .cards-painel{
+            .card{
+                width: 150px;
+                height: 150px;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+
+                }
+
+                p {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
