@@ -43,7 +43,7 @@
             &:hover{
                 color: var(--color-hover);
                 border-color: var(--color-hover);
-                transform: scale(1.05); /* Aumenta em 5% */
+                transform: scale(1.05);
             }
         }
     }
