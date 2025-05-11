@@ -65,6 +65,7 @@
 @media (max-width: 768px) {
     .skills{
         h2 {
+            justify-content: center;
             font-size: 2rem;
             margin-block: 3rem;
         }
